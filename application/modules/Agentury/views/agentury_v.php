@@ -12,7 +12,14 @@
              <th>Názov</th>
             </thead>
          <tbody>
-
+         <?php
+         if ($agentury_table !== "")
+         {
+             echo $agentury_table;
+         } else {
+             ?>
+         <tr> </tr>
+         <?php } ?>
          </tbody>
         </table>
     </div>
